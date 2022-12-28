@@ -16,7 +16,8 @@ vim.opt.wrap = false
 vim.opt.smartindent = true
 vim.opt.incsearch = true
 vim.opt.scrolloff=8
-vim.g.leader = " "
+vim.opt.termguicolors=true
+vim.opt.signcolumn="yes"
 
 
 
