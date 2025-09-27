@@ -1,0 +1,67 @@
+# https://rioterm.com/docs/config
+
+padding-x = 10
+padding-y = [10,10]
+line-height = 1.2
+confirm-before-quit = false
+
+[cursor]
+shape = 'block'
+blinking = false
+blinking-interval = 800
+
+[window]
+width = 1024
+height = 768
+mode = "windowed"
+opacity = 1.0
+blur = false
+decorations = "Enabled"
+colorspace = "display-p3"
+windows-use-no-redirection-bitmap = true
+
+[renderer]
+performance = "high"
+backend = "DX12"
+disable-unfocused-render = false
+level = 1
+filters = []
+strategy = "Game"
+
+[fonts]
+size = 16
+hinting = true
+family = "MesloLGS NF"
+features = []
+
+[scroll]
+multiplier = 3.0
+divider = 1.0
+
+[shell]
+program = "wsl.exe"
+args = ["-d", "Arch", "--exec", "/usr/bin/zsh", "-l"]
+
+# Colors
+#
+# Colors definition will overwrite any property in theme
+# (considering if theme folder does exists and is being used)
+#
+# Example:
+# [colors]
+# background = '#0F0D0E'
+# foreground = '#F9F4DA'
+# cursor = '#F38BA3'
+# tabs = '#443d40'
+# tabs-active = '#F38BA3'
+# green = '#0BA95B'
+# red = '#ED203D'
+# blue = '#12B5E5'
+# yellow = '#FCBA28'
+
+# [bindings]
+# keys = [
+#   { key = "q", with = "super", action = "Quit" },
+#   # Send escape sequence to clear screen
+#   { key = "l", with = "control", esc = "\u001b[2J\u001b[H" }
+# ]
